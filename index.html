@@ -109,7 +109,7 @@
         width: 14px;
       }
       figcaption {
-        margin-top: .25rem;
+        margin-top: 0.25rem;
         display: block;
         font-size: 14px;
       }
@@ -127,7 +127,6 @@
         background-color: var(--tan);
         border-radius: 1rem;
       }
-
 
       section.band {
         margin-bottom: 3rem;
@@ -160,8 +159,30 @@
           display: grid;
           grid-template-columns: 1fr;
         }
-      }
+        main > header {
+          background-image: url(./dc-flag-map-transparent.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          /* background-size: cover; */
+          min-height: 50vw;
+        }
+        h1 {
+          font-size: 72px;
+          text-align: center;
+        }
 
+        h2 {
+          letter-spacing: 0.25rem;
+          font-size: 36px;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 0rem;
+          padding: 0;
+          line-height: 4rem;
+        }
+      }
       section.why {
         margin-top: 3rem;
         margin-bottom: 5rem;
@@ -175,9 +196,12 @@
     <main>
       <header>
         <h1>Reunion Summer</h1>
-        <!-- <img src="./dc-flag-map-transparent.png" alt="" /> -->
+        <!-- <img src="./dc-flag-map-transparent.png" alt="" > -->
         <h2>a weekend of music, picnics, and community</h2>
       </header>
+
+      <img src="./images/poster.png" alt="" />
+
       <h3 class="date">July 28-30 in Washington, DC</h3>
 
       <section class="why">
@@ -203,21 +227,28 @@
       </section>
 
       <section class="events">
+        <h2>Events</h2>
         <div class="event">
           <h3>Friday, July 28th</h3>
-          <h4>Show @ St. Stephens</h4>
+          <h4>St. Stephens (6pm - 10pm)</h4>
           <div>
             Bacchae <span>-</span> Princessed <span>-</span> Jackie and the Treehorns <span>-</span> Breezy Supreme
           </div>
           <a
             href="https://www.eventbrite.com/e/rs-night-1-bacchae-princessed-jackie-and-the-treehorns-breezy-supreme-tickets-645440609237"
             class="button"
-            >Get Tickets for July 28th</a
           >
+            Get Tickets for July 28th
+          </a>
         </div>
         <div class="event">
           <h3>Saturday, July 29th</h3>
-          <h4>Show @ St. Stephens</h4>
+          <h4>Picnic @ Ft. Reno (12pm - 3pm)</h4>
+          <p>
+            Free and open to all! Bring sunscreen, pop up tent or umbrella, food and drink and yourselves! In the event
+            of rain this picnic will move indoors at St. Stephen's
+          </p>
+          <h4>St. Stephens (6pm - 10pm)</h4>
           <div>Lincoln <span>-</span> Samuel S.C. <span>-</span> Bed Maker <span>-</span> Continuals</div>
           <a
             href="https://www.eventbrite.com/e/renuion-summer-night-2-lincoln-samuel-sc-bed-maker-and-continuals-tickets-647410310667"
@@ -248,40 +279,20 @@
           </div>
         </div>
       </section>
+
       <h2>Bands</h2>
-      <!-- Hi James!!! Thanks so much for everything!!! I think we definitely want to keep all the text and links that are up
-      there on. Should I add them here or do you just want to pull? What is better? And I guess we should link to the
-      bandcamps wherever we can. Oh, also we can link to the IG which is @ReunionSummerDC. Here is the schedule of events:
-      Friday, July 28th 6pm-10pm - First Show at St. Stephen's featuring Breezy Supreme, Jackie and the Treehorns,
-      Princessed and Bacchae (ticket link) Saturday, July 29th 12pm-3pm - Picnic at Fort Reno Park - free and open to all
-      - bring sunscreen, pop up tent or umbrella, food and drink and yourselves In the event of rain this picnic will move
-      indoors at St. Stephen's Saturday, July 29th 6pm-10pm - Second Show at St. Stephen's featuring Continuals, Bed
-      Maker, Samuel S.C. and Lincoln (ticket link) Sunday, July 30th 1pm on - Recommend Visit to the DC Punk Archive at
-      the DC Public Library Then as I mentioned there is sort of the mission statement/why of it all. I guess the other
-      thing we would love to include is the photos and artist bios. Photos are attached to use for website and below are
-      the bios.  -->
-
-      <!-- The Princessed photo can be credited to Benjamin Tankersley. 
-      
-      Bacchae photo is by Avery Davis. 
-      The Samuel S.C. photo is large and thus attached differently, and can be credited to Matthew Rezac. 
-      
-      Photo credit Bed Maker:
-      <a href="https://www.flickr.com/photos/diane_krauthamer/">Diane Krauthamer</a>
-      
-      Photo credit Continuals: Michael Honch Lincoln.jpg -->
-
       <section class="band">
         <header>
           <h3>Bacchae</h3>
           <nav>
             <a href="https://bacchae.bandcamp.com/">
-              <img src="./icons/bandcamp.svg" />
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/bacchae.jpeg" alt="" class="band-photo"/>
-          <figcaption><img src="./icons/camera.svg"> Photo credit: Avery Davis </figcaption>
+        <figure>
+          <img src="./images/bacchae.jpeg" alt="" class="band-photo" />
+          <figcaption><img src="./icons/camera.svg" alt="camera icon" /> Photo credit: Avery Davis</figcaption>
         </figure>
         <p class="bio">
           Formed in 2016 by four friends with minimal experience as musicians, Bacchae make music with no assumptions
@@ -297,12 +308,13 @@
           <h3>Princessed</h3>
           <nav>
             <a href="https://princessed.bandcamp.com/">
-              <img src="./icons/bandcamp.svg" />
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/princessed.jpeg" alt="" class="band-photo"/>
-          <figcaption><img src="./icons/camera.svg"> Photo credit: Benjamin Tankersley</figcaption>
+        <figure>
+          <img src="./images/princessed.jpeg" alt="" class="band-photo" />
+          <figcaption><img src="./icons/camera.svg" alt="camera icon" /> Photo credit: Benjamin Tankersley</figcaption>
         </figure>
         <p class="bio">
           Princessed was founded in the mid-90s by high schoolers in a suburban basement outside of DC. Influenced by
@@ -318,33 +330,34 @@
           <nav>
             <a class="spotify" href="https://open.spotify.com/artist/38vWCPOcHo7Y9Vm486Bta3">
               <!-- <object data="./icons/spotify.svg"></object>  -->
-              <img src="./icons/spotify.svg" />
+              <img src="./icons/spotify.svg" alt="spotify icon" />
             </a>
 
             <a class="itunes" href="https://itunes.apple.com/us/artist/jackie-and-the-treehorns/406088957">
               <!-- <object data="./icons/itunes.svg"></object>  -->
-              <img src="./icons/itunes.svg" />
+              <img src="./icons/itunes.svg" alt="itunes icon" />
             </a>
             <a class="facebook" href="https://www.facebook.com/jackieandthetreehorns">
               <!-- <object data="./icons/facebook.svg"></object>  -->
-              <img src="./icons/facebook.svg" />
+              <img src="./icons/facebook.svg" alt="facebook icon" />
             </a>
             <a class="instagram" href="https://www.instagram.com/jackientreehorns">
               <!-- <object data="./icons/instagram.svg"></object>  -->
-              <img src="./icons/instagram.svg" />
+              <img src="./icons/instagram.svg" alt="instagram icon" />
             </a>
             <a class="youtube" href="https://www.youtube.com/user/jackientreehorns">
               <!-- <object data="./icons/youtube.svg"></object>  -->
-              <img src="./icons/youtube.svg" />
+              <img src="./icons/youtube.svg" alt="youtube icon" />
             </a>
             <a class="link" href="http://jackieandthetreehorns.com/">
               <!-- <object data="./icons/link.svg"></object>  -->
-              <img src="./icons/link.svg" />
+              <img src="./icons/link.svg" alt="link icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/jackie.jpg" alt="" class="band-photo"/>
-          <!-- <fig<caption><img src="./icons/camera.svg"> Photo credit: </caption> -->
+        <figure>
+          <img src="./images/jackie.jpg" alt="" class="band-photo" />
+          <!-- <fig<caption><img src="./icons/camera.svg" alt="camera icon"> Photo credit: </caption> -->
         </figure>
 
         <p class="bio">
@@ -367,21 +380,22 @@
           <h3>Breezy Supreme</h3>
           <nav>
             <a href="https://open.spotify.com/artist/4EYnKpPblwYYfZLTnV0vB1?si=EtECTmWTSnGdFvdslRGSeQ">
-              <img src="./icons/spotify.svg" />
+              <img src="./icons/spotify.svg" alt="spotify icon" />
             </a>
             <a href="https://music.apple.com/us/artist/breezy-supreme/1209334841">
-              <img src="./icons/itunes.svg" />
+              <img src="./icons/itunes.svg" alt="itunes icon" />
             </a>
             <a href="https://breezysupreme.bandcamp.com">
-              <img src="./icons/bandcamp.svg" />
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
             <a href="https://youtube.com/@Breezyxsupreme">
-              <img src="./icons/youtube.svg" />
+              <img src="./icons/youtube.svg" alt="youtube icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/breezy-supreme.jpeg" alt="" class="band-photo"/>
-          <!-- <fig<caption><img src="./icons/camera.svg"> Photo credit: </caption> -->
+        <figure>
+          <img src="./images/breezy-supreme.jpeg" alt="" class="band-photo" />
+          <!-- <fig<caption><img src="./icons/camera.svg" alt="camera icon"> Photo credit: </caption> -->
         </figure>
         <p class="bio">
           Breezy Supreme is a black alternative rock artist from the Washington DC/ Maryland area. Not being restricted
@@ -396,12 +410,13 @@
           <h3>Lincoln</h3>
           <nav>
             <a href="https://www.temporaryresidence.com/collections/lincoln">
-              <img src="./icons/link.svg" />
+              <img src="./icons/link.svg" alt="link icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/lincoln.jpg" alt="" class="band-photo"/>
-          <!-- <fig<caption><img src="./icons/camera.svg"> Photo credit: </caption> -->
+        <figure>
+          <img src="./images/lincoln.jpg" alt="" class="band-photo" />
+          <!-- <fig<caption><img src="./icons/camera.svg" alt="camera icon"> Photo credit: </caption> -->
         </figure>
         <p class="bio">
           Lincoln was a Morgantown, WV band formed in 1992 by Jay Demko (vocals/guitar), John Herod (guitar), Justin
@@ -417,37 +432,24 @@
           <h3>Samuel S.C.</h3>
           <nav>
             <a href="https://samuelsc.bandcamp.com/">
-              <img src="./icons/bandcamp.svg" />
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/samuel-sc.jpg" alt="" class="band-photo"/>
-          <figcaption><img src="./icons/camera.svg"> Photo credit: Matthew Rezac </figcaption>
+        <figure>
+          <img src="./images/samuel-sc.jpg" alt="" class="band-photo" />
+          <figcaption><img src="./icons/camera.svg" alt="camera icon" /> Photo credit: Matthew Rezac</figcaption>
         </figure>
         <p class="bio">
-          <p>
-            Originally formed in 1993 in State College, PA and named after Vanessa's beloved cat (and
-            Junction house mascot), Samuel's initial lifespan of just over 2 years was short but impactful.
-            Their presence, along with Astor's fabled Art Monk Construction label, helped cement the small
-            university town a reputation as birthplace and requisite tour stop for notable post-hardcore,
-            emo and post-punk outfits. In addition to producing two 7 inches, an EP (Art Monk
-            Construction) and a split with Texas Is The Reason (Simba Records), Samuel toured the DIY
-            indie/hardcore/punk circuit relentlessly, sharing bills with everyone from Anti-Flag to The
-            Promise Ring. Samuel's signature hard-driving anthems were equal parts stadium-ready indie
-            rock and spiky post-punk angularity, often featuring dueling vocals and intricate melodies &mdash; a
-            distinct sound that garnered fans of multiple genres.
-          </p>
-
-          <p>
-            Samuel's legacy strengthened in the years that followed and the band remained friends, albeit
-            scattered around the globe. After a 27 year hiatus, Samuel (now with the added S.C., a nod to
-            their hometown) has reformed, minus original member Josh Deutsch, and in Feb. 2023 finally
-            released a debut album High Places, Feb. 2023 on Org Music. The LP features reimagined
-            versions of previously unrecorded songs from their '95 tour, along with brand new material,
-            recorded at DC's Ivakota studios with help from Mike Schleibaum (Darkest Hour/Be Well) and
-            studio owner/engineer Ben Green. Also released in February is Samuel's 7-song catalog 94-95,
-            remixed and remastered for vinyl and digital. Shows and more new music to come!
-          </p>
+          After a 27-year hiatus, melodic punk/post-hardcore band Samuel reformed as Samuel S.C., the added initials
+          reflecting a change in personnel and a nod to the group's original home of State College, PA. Known for their
+          beloved mid-90s seven-inch EPs and split with Texas Is The Reason, Samuel rose from the ashes of singer
+          Vanessa Downing's previous band, Junction, and was one of the flagship bands of drummer Eric Astor's legendary
+          label Art Monk Construction. Both the band and label relocated to DC in 1995, then split before recording an
+          anticipated full length. Between 2019 - 2021, four of the five geographically scattered-but-still-close
+          longtime friends revisited and reconstructed older songs, crafted a few new ones, and finally made their debut
+          LP High Places, released on Org Music in early 2023, along with a compilation of their early material, titled
+          94-95. Shows and more new music to come!
         </p>
       </section>
       <section class="band">
@@ -455,12 +457,13 @@
           <h3>Bed Maker</h3>
           <nav>
             <a href="https://bedmakerdc.bandcamp.com/">
-              <img src="./icons/bandcamp.svg" />
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/bed-maker.jpg" alt="" class="band-photo"/>
-          <figcaption><img src="./icons/camera.svg"> Photo credit: Diane Krauthamer</figcaption>
+        <figure>
+          <img src="./images/bed-maker.jpg" alt="" class="band-photo" />
+          <figcaption><img src="./icons/camera.svg" alt="camera icon" /> Photo credit: Diane Krauthamer</figcaption>
         </figure>
         <p class="bio">
           Bed Maker is Jeff Barsky, Amanda MacKaye, Arthur Noll and Vin Novara. Separately, we have done a lot and now,
@@ -472,12 +475,13 @@
           <h3>Continuals</h3>
           <nav>
             <a href="https://continualsdc.bandcamp.com/">
-              <img src="./icons/bandcamp.svg" />
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
           </nav>
         </header>
-        <figure><img src="./images/continuals.jpeg" alt="" class="band-photo"/>
-          <figcaption> <img src="./icons/camera.svg"> Photo credit:  Michael Honch </figcaption>
+        <figure>
+          <img src="./images/continuals.jpeg" alt="" class="band-photo" />
+          <figcaption><img src="./icons/camera.svg" alt="camera icon" /> Photo credit: Michael Honch</figcaption>
         </figure>
         <p class="bio">
           Three human friends who have been in a bunch of other bands before this one. Darren plays drums. Michael plays
