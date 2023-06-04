@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reunion Summer 2023</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Work+Sans:wght@400&display=swap");
+      :root {
+        --white: #fdfdfd;
+        --dark: #13221e;
+        --tan: #bb7f48;
+        --clay: #d1432d;
+      }
+      a {
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        line-height: 1.5rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      main > header {
+        background-image: url(./dc-flag-map-transparent.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* background-size: cover; */
+        min-height: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      header h1 {
+        margin-top: 0;
+        color: var(--white);
+        opacity: 0.95;
+      }
+      .date {
+        font-family: Work Sans;
+      }
+
+      body {
+        display: grid;
+        background-color: var(--dark);
+        font-family: Work Sans, sans-serif;
+
+        font-size: 18px;
+        grid-template-columns: 1fr 2fr 1fr;
+        color: var(--white);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Rock Salt;
+        color: var(--white);
+      }
+
+      h1 {
+        font-size: 96px;
+        text-align: center;
+      }
+
+      h2 {
+        letter-spacing: 0.25rem;
+        font-size: 48px;
+      }
+      h3 {
+        font-size: 36px;
+        margin-bottom: 0rem;
+        padding: 0;
+        line-height: 4rem;
+      }
+
+      h4 {
+        font-size: 24px;
+      }
+      h4,
+      h5,
+      h6 {
+        font-family: Work Sans;
+      }
+
+      main {
+        grid-column: 2 / 3;
+      }
+      section.band img.band-photo {
+        display: block;
+      }
+
+      figure {
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+
+      figcaption img {
+        margin-top: -2px;
+        vertical-align: middle;
+        width: 14px;
+      }
+      figcaption {
+        margin-top: .25rem;
+        display: block;
+        font-size: 14px;
+      }
+
+      .button {
+        background-color: var(--clay);
+        border-radius: 1rem;
+
+        color: var(--white);
+        display: inline-block;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+      .button:hover {
+        background-color: var(--tan);
+        border-radius: 1rem;
+      }
+
+
+      section.band {
+        margin-bottom: 3rem;
+      }
+
+      section.band nav {
+        margin-bottom: 1.5rem;
+      }
+      section.band header > * {
+        display: inline-block;
+      }
+
+      section.band p.bio {
+        padding: 0;
+        margin: 0;
+      }
+
+      div.divider {
+        max-width: 10rem;
+        border-bottom: 1px solid var(--clay);
+        margin-bottom: 3rem;
+      }
+
+      @media (max-aspect-ratio: 1) {
+        body {
+          background-color: var(--dark);
+          /* background-color: #fdfdfd; */
+          font-size: 18px;
+
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+
+      section.why {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+      }
+      div.event span {
+        color: var(--clay);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Reunion Summer</h1>
+        <!-- <img src="./dc-flag-map-transparent.png" alt="" /> -->
+        <h2>a weekend of music, picnics, and community</h2>
+      </header>
+      <h3 class="date">July 28-30 in Washington, DC</h3>
+
+      <section class="why">
+        <h4>Why Reunion Summer?</h4>
+        <p>
+          We're holding this event because DC punk is how we grew up and who we are. We don't think we are alone in
+          that. Particularly after years in lockdown and isolation, we want to return to our roots and invite anyone who
+          has felt moved and inspired by DC punk to join us and do the same. The main purpose of this event is to bring
+          people from that tradition back in touch with one another, spread apart though we all may be. Please make
+          plans to come be part of things! There will be music and shows, art exhibits, zines, a huge community picnic
+          and more.
+        </p>
+
+        <p>
+          We believe in the potential of DC punk to ignite new art, music and ideas for decades to come; the magic is
+          there when we all come together.
+        </p>
+
+        <p>
+          In true all ages fashion, this gathering will have something for everyone - including the youngest and newest
+          to punk. Families and children welcome!
+        </p>
+      </section>
+
+      <section class="events">
+        <div class="event">
+          <h3>Friday, July 28th</h3>
+          <h4>Show @ St. Stephens</h4>
+          <div>
+            Bacchae <span>-</span> Princessed <span>-</span> Jackie and the Treehorns <span>-</span> Breezy Supreme
+          </div>
+          <a
+            href="https://www.eventbrite.com/e/rs-night-1-bacchae-princessed-jackie-and-the-treehorns-breezy-supreme-tickets-645440609237"
+            class="button"
+            >Get Tickets for July 28th</a
+          >
+        </div>
+        <div class="event">
+          <h3>Saturday, July 29th</h3>
+          <h4>Show @ St. Stephens</h4>
+          <div>Lincoln <span>-</span> Samuel S.C. <span>-</span> Bed Maker <span>-</span> Continuals</div>
+          <a
+            href="https://www.eventbrite.com/e/renuion-summer-night-2-lincoln-samuel-sc-bed-maker-and-continuals-tickets-647410310667"
+            class="button"
+            >Get Tickets for July 29th</a
+          >
+        </div>
+        <div class="event">
+          <h3>Sunday, July 30th</h3>
+          <h4>DC Punk Archive @ MLK Library (1pm - 5pm)</h4>
+          <p>
+            The DC Punk Archive was established in 2014 to document the vibrant and influential punk music scene of
+            Washington D.C. The subject scope is intentionally broad, including punk and related local music between
+            1976-present, in order to capture both well-documented and lesser-known stories. The archive documents music
+            and musicians as well as the cultural context of venues, festivals, record shops, radio stations, houses and
+            tours that were a vital part of the D.C. scene.
+          </p>
+
+          <p>
+            The collection includes photographs, published materials (books, zines, and articles), sound and video
+            recordings (vinyl records, tapes, CDs, live performances, demos, oral histories, and interviews), and
+            ephemera (fliers, posters, set lists, letters, and tickets).
+          </p>
+          <div>
+            <a href="https://www.dclibrary.org/plan-visit/martin-luther-king-jr-memorial-library" class="button"
+              >Visit the DC Punk Archive</a
+            >
+          </div>
+        </div>
+      </section>
+      <h2>Bands</h2>
+      <!-- Hi James!!! Thanks so much for everything!!! I think we definitely want to keep all the text and links that are up
+      there on. Should I add them here or do you just want to pull? What is better? And I guess we should link to the
+      bandcamps wherever we can. Oh, also we can link to the IG which is @ReunionSummerDC. Here is the schedule of events:
+      Friday, July 28th 6pm-10pm - First Show at St. Stephen's featuring Breezy Supreme, Jackie and the Treehorns,
+      Princessed and Bacchae (ticket link) Saturday, July 29th 12pm-3pm - Picnic at Fort Reno Park - free and open to all
+      - bring sunscreen, pop up tent or umbrella, food and drink and yourselves In the event of rain this picnic will move
+      indoors at St. Stephen's Saturday, July 29th 6pm-10pm - Second Show at St. Stephen's featuring Continuals, Bed
+      Maker, Samuel S.C. and Lincoln (ticket link) Sunday, July 30th 1pm on - Recommend Visit to the DC Punk Archive at
+      the DC Public Library Then as I mentioned there is sort of the mission statement/why of it all. I guess the other
+      thing we would love to include is the photos and artist bios. Photos are attached to use for website and below are
+      the bios.  -->
+
+      <!-- The Princessed photo can be credited to Benjamin Tankersley. 
+      
+      Bacchae photo is by Avery Davis. 
+      The Samuel S.C. photo is large and thus attached differently, and can be credited to Matthew Rezac. 
+      
+      Photo credit Bed Maker:
+      <a href="https://www.flickr.com/photos/diane_krauthamer/">Diane Krauthamer</a>
+      
+      Photo credit Continuals: Michael Honch Lincoln.jpg -->
+
+      <section class="band">
+        <header>
+          <h3>Bacchae</h3>
+          <nav>
+            <a href="https://bacchae.bandcamp.com/">
+              <img src="./icons/bandcamp.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/bacchae.jpeg" alt="" class="band-photo"/>
+          <figcaption><img src="./icons/camera.svg"> Photo credit: Avery Davis </figcaption>
+        </figure>
+        <p class="bio">
+          Formed in 2016 by four friends with minimal experience as musicians, Bacchae make music with no assumptions
+          about what a punk band should sound like. On their LP, “Pleasure Vision”, brooding synth-driven pop sits
+          alongside prickly, fast-paced punk and spooky post-punk sounds. Sometimes you get all of that in a single
+          song. But whether the band is exploring the pain of a doomed relationship or the push and pull of disgust and
+          desire while shopping online, what carries through it all is a sense of uncertainty, dissolution and dread.
+        </p>
+      </section>
+
+      <section class="band">
+        <header>
+          <h3>Princessed</h3>
+          <nav>
+            <a href="https://princessed.bandcamp.com/">
+              <img src="./icons/bandcamp.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/princessed.jpeg" alt="" class="band-photo"/>
+          <figcaption><img src="./icons/camera.svg"> Photo credit: Benjamin Tankersley</figcaption>
+        </figure>
+        <p class="bio">
+          Princessed was founded in the mid-90s by high schoolers in a suburban basement outside of DC. Influenced by
+          the urgent, DIY energy of riot grrrl & alt rock icons like Babes in Toyland and the Lunachicks, they processed
+          teen angst while poking fun at the patriarchy. Nurtured in local record stores, Princessed found a home at DIY
+          punk shows in VA & benefit shows for which DC punk is notorious.
+        </p>
+      </section>
+
+      <section class="band">
+        <header>
+          <h3>Jackie and the Treehorns</h3>
+          <nav>
+            <a class="spotify" href="https://open.spotify.com/artist/38vWCPOcHo7Y9Vm486Bta3">
+              <!-- <object data="./icons/spotify.svg"></object>  -->
+              <img src="./icons/spotify.svg" />
+            </a>
+
+            <a class="itunes" href="https://itunes.apple.com/us/artist/jackie-and-the-treehorns/406088957">
+              <!-- <object data="./icons/itunes.svg"></object>  -->
+              <img src="./icons/itunes.svg" />
+            </a>
+            <a class="facebook" href="https://www.facebook.com/jackieandthetreehorns">
+              <!-- <object data="./icons/facebook.svg"></object>  -->
+              <img src="./icons/facebook.svg" />
+            </a>
+            <a class="instagram" href="https://www.instagram.com/jackientreehorns">
+              <!-- <object data="./icons/instagram.svg"></object>  -->
+              <img src="./icons/instagram.svg" />
+            </a>
+            <a class="youtube" href="https://www.youtube.com/user/jackientreehorns">
+              <!-- <object data="./icons/youtube.svg"></object>  -->
+              <img src="./icons/youtube.svg" />
+            </a>
+            <a class="link" href="http://jackieandthetreehorns.com/">
+              <!-- <object data="./icons/link.svg"></object>  -->
+              <img src="./icons/link.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/jackie.jpg" alt="" class="band-photo"/>
+          <!-- <fig<caption><img src="./icons/camera.svg"> Photo credit: </caption> -->
+        </figure>
+
+        <p class="bio">
+          Rooted in the basic tenets of rock, Jackie and The Treehorns create music from just outside the nation's
+          capital in Alexandria, VA and just outside the mainstream. Formed in 2009 and fronted by Steven Rubin under
+          the guise of an altered ego (Jackie) and his band (The Treehorns) the group fight to keep the flames of the
+          rock and/or roll fire lit with inspired original inventiveness. Jackie and The Treehorns' music covers a wide
+          sonic palate, taking the listener down familiar paths before detouring towards parts unknown, while Jackie's
+          lyrics explore topics ranging from celebrity stalkers, robots, serial killers, and hitchhikers to odd
+          phenomena like UFO's, déjà vu, ghosts, and extraterrestrial party favors. The bands most recent releases, Go
+          Get Your Ghosts (2023), Made You Run (2021), Hidden Cameras (2020) and It's Never Too Late (2019), were
+          recorded at Ivakota Studios in Washington, DC with Ben Green. For their previous releases, The J. Album
+          (2018), singles Writer and A World Gone Mad (2017), RU4REAL? (2016), and Do You Mind If I Wear A Clown Mask?
+          (2015) the band worked with legendary engineer Don Zientara at the famed Inner Ear Studio in Arlington, VA.
+        </p>
+      </section>
+
+      <section class="band">
+        <header>
+          <h3>Breezy Supreme</h3>
+          <nav>
+            <a href="https://open.spotify.com/artist/4EYnKpPblwYYfZLTnV0vB1?si=EtECTmWTSnGdFvdslRGSeQ">
+              <img src="./icons/spotify.svg" />
+            </a>
+            <a href="https://music.apple.com/us/artist/breezy-supreme/1209334841">
+              <img src="./icons/itunes.svg" />
+            </a>
+            <a href="https://breezysupreme.bandcamp.com">
+              <img src="./icons/bandcamp.svg" />
+            </a>
+            <a href="https://youtube.com/@Breezyxsupreme">
+              <img src="./icons/youtube.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/breezy-supreme.jpeg" alt="" class="band-photo"/>
+          <!-- <fig<caption><img src="./icons/camera.svg"> Photo credit: </caption> -->
+        </figure>
+        <p class="bio">
+          Breezy Supreme is a black alternative rock artist from the Washington DC/ Maryland area. Not being restricted
+          to just 1 sound, Breezy has experimented with multiple genres such as Pop Punk, Punk, Hardcore, Hip Hop and
+          more. Breezy mostly expresses different struggles and emotions in his music, all in which are personal to him.
+          Though he doesn't have a specific end goal, he aims to inspire and create space for other black alternative
+          creatives across the globe.
+        </p>
+      </section>
+      <section class="band">
+        <header>
+          <h3>Lincoln</h3>
+          <nav>
+            <a href="https://www.temporaryresidence.com/collections/lincoln">
+              <img src="./icons/link.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/lincoln.jpg" alt="" class="band-photo"/>
+          <!-- <fig<caption><img src="./icons/camera.svg"> Photo credit: </caption> -->
+        </figure>
+        <p class="bio">
+          Lincoln was a Morgantown, WV band formed in 1992 by Jay Demko (vocals/guitar), John Herod (guitar), Justin
+          Wierbonski (drums), and Johanna Claasen (bass). Dan­ Ball would take over as bassist when Claasen couldn't
+          tour due to conflicts with college. Lincoln was a band for just a brief time, and left behind only a handful
+          of recordings, but they remain highly respected and are often regarded as one of the many foundational pieces
+          of what would become known as “post-hardcore,” as well as the proto-emo scene that was birthed by bands like
+          Rites of Spring and Moss Icon.
+        </p>
+      </section>
+      <section class="band">
+        <header>
+          <h3>Samuel S.C.</h3>
+          <nav>
+            <a href="https://samuelsc.bandcamp.com/">
+              <img src="./icons/bandcamp.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/samuel-sc.jpg" alt="" class="band-photo"/>
+          <figcaption><img src="./icons/camera.svg"> Photo credit: Matthew Rezac </figcaption>
+        </figure>
+        <p class="bio">
+          <p>
+            Originally formed in 1993 in State College, PA and named after Vanessa's beloved cat (and
+            Junction house mascot), Samuel's initial lifespan of just over 2 years was short but impactful.
+            Their presence, along with Astor's fabled Art Monk Construction label, helped cement the small
+            university town a reputation as birthplace and requisite tour stop for notable post-hardcore,
+            emo and post-punk outfits. In addition to producing two 7 inches, an EP (Art Monk
+            Construction) and a split with Texas Is The Reason (Simba Records), Samuel toured the DIY
+            indie/hardcore/punk circuit relentlessly, sharing bills with everyone from Anti-Flag to The
+            Promise Ring. Samuel's signature hard-driving anthems were equal parts stadium-ready indie
+            rock and spiky post-punk angularity, often featuring dueling vocals and intricate melodies &mdash; a
+            distinct sound that garnered fans of multiple genres.
+          </p>
+
+          <p>
+            Samuel's legacy strengthened in the years that followed and the band remained friends, albeit
+            scattered around the globe. After a 27 year hiatus, Samuel (now with the added S.C., a nod to
+            their hometown) has reformed, minus original member Josh Deutsch, and in Feb. 2023 finally
+            released a debut album High Places, Feb. 2023 on Org Music. The LP features reimagined
+            versions of previously unrecorded songs from their '95 tour, along with brand new material,
+            recorded at DC's Ivakota studios with help from Mike Schleibaum (Darkest Hour/Be Well) and
+            studio owner/engineer Ben Green. Also released in February is Samuel's 7-song catalog 94-95,
+            remixed and remastered for vinyl and digital. Shows and more new music to come!
+          </p>
+        </p>
+      </section>
+      <section class="band">
+        <header>
+          <h3>Bed Maker</h3>
+          <nav>
+            <a href="https://bedmakerdc.bandcamp.com/">
+              <img src="./icons/bandcamp.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/bed-maker.jpg" alt="" class="band-photo"/>
+          <figcaption><img src="./icons/camera.svg"> Photo credit: Diane Krauthamer</figcaption>
+        </figure>
+        <p class="bio">
+          Bed Maker is Jeff Barsky, Amanda MacKaye, Arthur Noll and Vin Novara. Separately, we have done a lot and now,
+          together, we are doing this.
+        </p>
+      </section>
+      <section class="band">
+        <header>
+          <h3>Continuals</h3>
+          <nav>
+            <a href="https://continualsdc.bandcamp.com/">
+              <img src="./icons/bandcamp.svg" />
+            </a>
+          </nav>
+        </header>
+        <figure><img src="./images/continuals.jpeg" alt="" class="band-photo"/>
+          <figcaption> <img src="./icons/camera.svg"> Photo credit:  Michael Honch </figcaption>
+        </figure>
+        <p class="bio">
+          Three human friends who have been in a bunch of other bands before this one. Darren plays drums. Michael plays
+          bass. Ryan plays guitar and "sings."
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="info">
+        <p>
+          The shows are a benefit for St. Stephen's Church, a pivotal space for punk performances and community
+          organizing for many decades. Both concerts will take place at St. Stephen's: 1525 Newton Street, NW. Both
+          begin at 6pm; a link to purchase tickets will be available shortly so stay tuned.
+        </p>
+
+        <p>
+          In addition to both shows, there will be a community picnic on Saturday, July 29th at Fort Reno Park from
+          12-3pm. On Sunday, July 30th, attendees are encouraged to visit the DC punk archive at the DC public library.
+        </p>
+
+        <p>Keep checking this space for more details, photos, etc! See you this summer.</p>
+      </section>
+    </main>
+  </body>
+</html>
