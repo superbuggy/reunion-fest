@@ -18,8 +18,7 @@
         text-decoration: none;
       }
       a:hover h3,
-      header.sticky a:hover
-       {
+      header.sticky a:hover {
         color: var(--clay);
       }
 
@@ -160,7 +159,20 @@
         margin-top: 3rem;
         margin-bottom: 5rem;
       }
-      div.event span {
+      div.schedule-event {
+        margin-bottom: 4rem;
+      }
+      div.schedule-event h3,
+      div.schedule-event h4 {
+        margin-bottom: 1rem;
+      }
+      div.schedule-event h4 {
+        margin-top: 1rem;
+      }
+      div.schedule-event p.bands {
+        /* margin-bottom: 0; */
+      }
+      div.schedule-event p.bands span {
         color: var(--clay);
       }
       header.sticky {
@@ -190,7 +202,6 @@
       }
       nav img.icon:hover {
         filter: invert(1) hue-rotate(175deg);
-
       }
       section.about {
         margin-bottom: 25rem;
@@ -231,7 +242,6 @@
           /* color: var(--white); */
         }
       }
-
     </style>
   </head>
   <body>
@@ -258,6 +268,7 @@
         </section>
         <div class="divider" id="why"></div>
         <section class="why">
+          <h2>Why?</h2>
           <h4>Why Reunion Summer?</h4>
           <p>
             We're holding this event because DC punk is how we grew up and who we are. We don't think we are alone in
@@ -279,14 +290,14 @@
           </p>
         </section>
         <div class="divider" id="schedule"></div>
-        <section class="events">
+        <section class="schedule">
           <h2>Schedule</h2>
-          <div class="event">
+          <div class="schedule-event">
             <h3>Friday, July 28th</h3>
             <h4>St. Stephens (6pm - 10pm)</h4>
-            <div>
+            <p class="bands">
               Bacchae <span>-</span> Princessed <span>-</span> Jackie and the Treehorns <span>-</span> Breezy Supreme
-            </div>
+            </p>
             <a
               href="https://www.eventbrite.com/e/rs-night-1-bacchae-princessed-jackie-and-the-treehorns-breezy-supreme-tickets-645440609237"
               class="button"
@@ -294,7 +305,7 @@
               Get Tickets for July 28th
             </a>
           </div>
-          <div class="event">
+          <div class="schedule-event">
             <h3>Saturday, July 29th</h3>
             <h4>Picnic @ Ft. Reno (12pm - 3pm)</h4>
             <p>
@@ -302,14 +313,14 @@
               event of rain this picnic will move indoors at St. Stephen's
             </p>
             <h4>St. Stephens (6pm - 10pm)</h4>
-            <div>Lincoln <span>-</span> Samuel S.C. <span>-</span> Bed Maker <span>-</span> Continuals</div>
+            <p class="bands">Lincoln <span>-</span> Samuel S.C. <span>-</span> Bed Maker <span>-</span> Continuals</p>
             <a
               href="https://www.eventbrite.com/e/renuion-summer-night-2-lincoln-samuel-sc-bed-maker-and-continuals-tickets-647410310667"
               class="button"
               >Get Tickets for July 29th</a
             >
           </div>
-          <div class="event">
+          <div class="schedule-event">
             <h3>Sunday, July 30th</h3>
             <h4>DC Punk Archive @ MLK Library (1pm - 5pm)</h4>
             <p>
@@ -347,7 +358,11 @@
             </nav>
           </header>
           <figure>
-            <img src="./images/bacchae.jpeg" alt="Members of Bacchae standing in front a graffiti-tagged gate" class="band-photo" />
+            <img
+              src="./images/bacchae.jpeg"
+              alt="Members of Bacchae standing in front a graffiti-tagged gate"
+              class="band-photo"
+            />
             <figcaption>
               <img class="icon" src="./icons/camera.svg" alt="camera icon" /> Photo credit: Avery Davis
             </figcaption>
@@ -425,7 +440,11 @@
             </nav>
           </header>
           <figure>
-            <img src="./images/jackie.jpg" alt="Black and white photo of the members of Jackie and the Treehorns" class="band-photo">
+            <img
+              src="./images/jackie.jpg"
+              alt="Black and white photo of the members of Jackie and the Treehorns"
+              class="band-photo"
+            />
             <!-- class="icon" <fig<caption><img src="./icons/camera.svg" alt="camera icon"> Photo credit: </caption> -->
           </figure>
 
@@ -466,7 +485,7 @@
             </nav>
           </header>
           <figure>
-            <img src="./images/breezy-supreme.jpeg" alt="Photo of Breezy Supreme" class="band-photo">
+            <img src="./images/breezy-supreme.jpeg" alt="Photo of Breezy Supreme" class="band-photo" />
             <!-- class="icon" <fig<caption><img src="./icons/camera.svg" alt="camera icon"> Photo credit: </caption> -->
           </figure>
           <p class="bio">
@@ -575,7 +594,7 @@
           </p>
         </section>
 
-        <div class="divider"  id="about"></div>
+        <div class="divider" id="about"></div>
 
         <section class="about">
           <h2>About</h2>
