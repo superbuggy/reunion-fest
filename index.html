@@ -9,6 +9,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Work+Sans:wght@400&display=swap");
       :root {
         --white: #fdfdfd;
+        --slight-ghosty-white: #fdfdfddd;
         --dark: #13221e;
         --tan: #bb7f48;
         --clay: #d1432d;
@@ -27,7 +28,11 @@
       img {
         max-width: 100%;
       }
-      main > header {
+      section {
+        padding: 0 1rem;
+      }
+      main header.banner {
+        padding-top: 48px;
         background-image: url(./dc-flag-map-transparent.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -40,8 +45,7 @@
       }
       header h1 {
         margin-top: 0;
-        color: var(--white);
-        opacity: 0.95;
+        color: var(--slight-ghosty-white);
       }
       .date {
         font-family: Work Sans;
@@ -150,8 +154,9 @@
         margin-bottom: 3rem;
       }
 
-      @media (max-aspect-ratio: 1) {
+      @media (max-aspect-ratio: 1/1) {
         body {
+          margin: 0;
           background-color: var(--dark);
           /* background-color: #fdfdfd; */
           font-size: 18px;
@@ -159,16 +164,9 @@
           display: grid;
           grid-template-columns: 1fr;
         }
-        main > header {
-          background-image: url(./dc-flag-map-transparent.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          /* background-size: cover; */
-          min-height: 50vw;
-        }
+
         h1 {
-          font-size: 72px;
+          font-size:69px;
           text-align: center;
         }
 
@@ -182,6 +180,14 @@
           padding: 0;
           line-height: 4rem;
         }
+        header.sticky {
+          width: 100% !important;
+        }
+        header.sticky nav a {
+          /* font-family: Rock Salt; */
+          font-size: 20px;
+          /* color: var(--white); */
+        }
       }
       section.why {
         margin-top: 3rem;
@@ -190,21 +196,50 @@
       div.event span {
         color: var(--clay);
       }
+      header.sticky {
+        margin: 0;
+        background-color: var(--dark);
+        width: 50%;
+        position: fixed;
+        height: 48px;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      header.sticky a {
+        font-family: Rock Salt;
+        font-size: 24px;
+        color: var(--white);
+      }
     </style>
   </head>
   <body>
     <main>
-      <header>
-        <h1>Reunion Summer</h1>
-        <!-- <img src="./dc-flag-map-transparent.png" alt="" > -->
-        <h2>a weekend of music, picnics, and community</h2>
+      <header class="sticky">
+        <nav>
+          <a href="#why">Why?</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#bands">Bands</a>
+          <a href="#about">About</a>
+        </nav>
       </header>
+      <div class="main-content">
+      <section>
+        <header class="banner">
+          <h1>Reunion Summer</h1>
+          <!-- <img src="./dc-flag-map-transparent.png" alt="" > -->
+          <h2>a weekend of music, picnics, and community</h2>
+        </header>
+        
+        <img
+          src="./images/poster.png"
+          alt="Show poster for July 28th: Bacchae, Princessed, Jackie and the Treehorns, and Breezy Supreme at 6pm-10pm and Lincoln, Samuel S.C., Bed Maker, and Continuals on July 29th at 6pm - 10pm"
+        />
+      </section>
 
-      <img src="./images/poster.png" alt="" />
-
-      <h3 class="date">July 28-30 in Washington, DC</h3>
-
-      <section class="why">
+      <section id="why" class="why">
         <h4>Why Reunion Summer?</h4>
         <p>
           We're holding this event because DC punk is how we grew up and who we are. We don't think we are alone in
@@ -227,7 +262,7 @@
       </section>
 
       <section class="events">
-        <h2>Events</h2>
+        <h2 id="schedule">Schedule</h2>
         <div class="event">
           <h3>Friday, July 28th</h3>
           <h4>St. Stephens (6pm - 10pm)</h4>
@@ -280,10 +315,12 @@
         </div>
       </section>
 
-      <h2>Bands</h2>
+      <h2 id="bands">Bands</h2>
       <section class="band">
         <header>
-          <h3>Bacchae</h3>
+          <a href="https://bacchae.bandcamp.com/">
+            <h3>Bacchae</h3>
+          </a>
           <nav>
             <a href="https://bacchae.bandcamp.com/">
               <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
@@ -305,7 +342,9 @@
 
       <section class="band">
         <header>
-          <h3>Princessed</h3>
+          <a href="https://princessed.bandcamp.com/">
+            <h3>Princessed</h3>
+          </a>
           <nav>
             <a href="https://princessed.bandcamp.com/">
               <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
@@ -326,8 +365,14 @@
 
       <section class="band">
         <header>
-          <h3>Jackie and the Treehorns</h3>
+          <a href="https://jackieandthetreehorns.bandcamp.com/album/go-get-your-ghosts">
+            <h3>Jackie and the Treehorns</h3>
+          </a>
           <nav>
+            <a class="bandcamp" href="https://jackieandthetreehorns.bandcamp.com/album/go-get-your-ghosts">
+              <!-- <object data="./icons/spotify.svg"></object>  -->
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
+            </a>
             <a class="spotify" href="https://open.spotify.com/artist/38vWCPOcHo7Y9Vm486Bta3">
               <!-- <object data="./icons/spotify.svg"></object>  -->
               <img src="./icons/spotify.svg" alt="spotify icon" />
@@ -377,16 +422,18 @@
 
       <section class="band">
         <header>
-          <h3>Breezy Supreme</h3>
+          <a href="https://breezysupreme.bandcamp.com">
+            <h3>Breezy Supreme</h3>
+          </a>
           <nav>
+            <a href="https://breezysupreme.bandcamp.com">
+              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
+            </a>
             <a href="https://open.spotify.com/artist/4EYnKpPblwYYfZLTnV0vB1?si=EtECTmWTSnGdFvdslRGSeQ">
               <img src="./icons/spotify.svg" alt="spotify icon" />
             </a>
             <a href="https://music.apple.com/us/artist/breezy-supreme/1209334841">
               <img src="./icons/itunes.svg" alt="itunes icon" />
-            </a>
-            <a href="https://breezysupreme.bandcamp.com">
-              <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
             </a>
             <a href="https://youtube.com/@Breezyxsupreme">
               <img src="./icons/youtube.svg" alt="youtube icon" />
@@ -407,7 +454,9 @@
       </section>
       <section class="band">
         <header>
-          <h3>Lincoln</h3>
+          <a href="https://www.temporaryresidence.com/collections/lincoln">
+            <h3>Lincoln</h3>
+          </a>
           <nav>
             <a href="https://www.temporaryresidence.com/collections/lincoln">
               <img src="./icons/link.svg" alt="link icon" />
@@ -429,7 +478,9 @@
       </section>
       <section class="band">
         <header>
-          <h3>Samuel S.C.</h3>
+          <a href="https://samuelsc.bandcamp.com/">
+            <h3>Samuel S.C.</h3>
+          </a>
           <nav>
             <a href="https://samuelsc.bandcamp.com/">
               <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
@@ -454,7 +505,9 @@
       </section>
       <section class="band">
         <header>
-          <h3>Bed Maker</h3>
+          <a href="https://bedmakerdc.bandcamp.com/">
+            <h3>Bed Maker</h3>
+          </a>
           <nav>
             <a href="https://bedmakerdc.bandcamp.com/">
               <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
@@ -472,7 +525,9 @@
       </section>
       <section class="band">
         <header>
-          <h3>Continuals</h3>
+          <a href="https://continualsdc.bandcamp.com/">
+            <h3>Continuals</h3>
+          </a>
           <nav>
             <a href="https://continualsdc.bandcamp.com/">
               <img src="./icons/bandcamp.svg" alt="bandcamp icon" />
@@ -492,6 +547,7 @@
       <div class="divider"></div>
 
       <section class="info">
+        <h2 id="about">About</h2>
         <p>
           The shows are a benefit for St. Stephen's Church, a pivotal space for punk performances and community
           organizing for many decades. Both concerts will take place at St. Stephen's: 1525 Newton Street, NW. Both
@@ -505,6 +561,7 @@
 
         <p>Keep checking this space for more details, photos, etc! See you this summer.</p>
       </section>
+    </div>
     </main>
   </body>
 </html>
