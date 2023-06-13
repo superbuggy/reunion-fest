@@ -111,6 +111,9 @@
         grid-column: 2 / 3;
       }
       section.band img.band-photo {
+        margin-bottom: 1.5rem;
+      }
+      section.band img.band-photo {
         display: block;
       }
 
@@ -151,8 +154,8 @@
         margin-bottom: 3rem;
       }
 
-      section.band nav {
-        margin-bottom: 1.5rem;
+      section.band header {
+        margin-bottom: 1rem;
       }
       section.band header > * {
         display: inline-block;
@@ -173,13 +176,11 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
       }
-      .positive-force section{
+      .positive-force section {
         padding-left: 1rem;
-
       }
-      .positive-force section p{
-        margin-top:0;
-
+      .positive-force section p {
+        margin-top: 0;
       }
 
       div.schedule-event {
@@ -200,34 +201,36 @@
       div.schedule-day h4 {
         margin-top: 1rem;
       }
-      div.schedule-day p.bands {
-        /* margin-bottom: 0; */
-      }
+
       div.schedule-day p.bands span {
         color: var(--clay);
       }
       header.sticky {
         margin: 0;
-        background-color: var(--dark);
+        padding: 0 0.5rem;
+        background-color: var(--clay);
         width: 50%;
+        /* border-bottom: 2px solid var(--clay); */
         position: fixed;
         height: 48px;
       }
-      nav {
+      header.sticky nav {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        padding: 0 0.25rem;
       }
-      header.sticky a {
+      header.sticky nav a {
         font-family: Rock Salt;
         font-size: 24px;
         color: var(--white);
       }
-      figcaption img.icon {
+      section.band figcaption img.icon {
         height: 1rem;
         width: 1rem;
       }
-      img.icon {
+      section.band img.icon {
+        vertical-align: text-bottom;
         height: 2rem;
         width: 2rem;
       }
@@ -269,17 +272,15 @@
         }
         header.sticky nav a {
           /* font-family: Rock Salt; */
-          font-size: 20px;
+          font-size: 18px;
           /* color: var(--white); */
         }
         .positive-force {
-        display: block;
-
-      }
-      .positive-force section{
-        padding-left: 1rem;
-
-      }
+          display: block;
+        }
+        .positive-force section {
+          padding-left: 1rem;
+        }
       }
     </style>
   </head>
@@ -329,24 +330,28 @@
           </p>
           <h4>In Collaboration with Positive Force DC</h4>
           <div class="positive-force">
-            
-            <img src="./images/pf-logo.png" style="max-height: 70vh;" alt="Logo for Positive Force DC" />
+            <img src="./images/pf-logo.png" style="max-height: 70vh" alt="Logo for Positive Force DC" />
             <section>
               <p>
-                Since 1985, Positive Force DC has been turning punk idealism into community action through benefit concerts,
-                protests, educational events, film showings and service work. For more information about PF, or to get more
-                involved, please <a href="mailto:dcpositiveforce@gmail.com">email PF</a> or <a href="tel:+12024878698">call 202-487-8698</a>. PF shares office space with We Are
-                Family at <a href="https://www.saintstephensdc.org/">St. Stephen's</a>, <a href="https://www.google.com/maps/dir/39.9287327,-75.1599078/1525+Newton+St+NW,+Washington,+DC+20010/@39.4217898,-77.2147361,8z">1525 Newton Street NW, WDC 20010</a> and is always open to new ideas and energy. Be
-                more than a witness!
+                Since 1985, Positive Force DC has been turning punk idealism into community action through benefit
+                concerts, protests, educational events, film showings and service work. For more information about PF,
+                or to get more involved, please <a href="mailto:dcpositiveforce@gmail.com">email PF</a> or
+                <a href="tel:+12024878698">call 202-487-8698</a>. PF shares office space with We Are Family at
+                <a href="https://www.saintstephensdc.org/">St. Stephen's</a>,
+                <a
+                  href="https://www.google.com/maps/dir/39.9287327,-75.1599078/1525+Newton+St+NW,+Washington,+DC+20010/@39.4217898,-77.2147361,8z"
+                  >1525 Newton Street NW, WDC 20010</a
+                >
+                and is always open to new ideas and energy. Be more than a witness!
               </p>
               <p>
-                Help fight hunger among our older neighbors while also building bridges across lines of race, class, age and
-                beyond! Join We Are Family to bring groceries and love to low-income seniors in the Columbia Heights
+                Help fight hunger among our older neighbors while also building bridges across lines of race, class, age
+                and beyond! Join We Are Family to bring groceries and love to low-income seniors in the Columbia Heights
                 neighborhood.
               </p>
             </section>
-
           </div>
+        </section>
         <div class="divider" id="schedule"></div>
         <section class="schedule">
           <h2>Schedule</h2>
@@ -370,15 +375,16 @@
             <div class="schedule-event">
               <h4>Grocery Delivery for Low-Income Seniors (10am - 1pm)</h4>
               <div class="positive-force">
-                <img src="./images/we-are-family.png" alt="We Are Family DC logo">
+                <img src="./images/we-are-family.png" alt="We Are Family DC logo" />
                 <section>
                   <p>
                     Join We Are Family to bring groceries and love to low-income seniors in the Columbia Heights
-                    neighborhood from 10am-1pm on Saturday, July 29th! Both folks with cars and those without can help fight
-                    hunger among our older neighbors while also building bridges across lines of race, class, age and
-                    beyond. Contact Mark Andersen <a href="mailto:wearefamilydc@gmail.com">via email</a> or
-                    <a href="tel:+12024878698">202-487-8698</a> to get more details or to sign up to help. You can also do
-                    so via <a href="https://www.wearefamilydc.org/get-involved/volunteer/">the We Are Family website</a>.
+                    neighborhood from 10am-1pm on Saturday, July 29th! Both folks with cars and those without can help
+                    fight hunger among our older neighbors while also building bridges across lines of race, class, age
+                    and beyond. Contact Mark Andersen <a href="mailto:wearefamilydc@gmail.com">via email</a> or
+                    <a href="tel:+12024878698">202-487-8698</a> to get more details or to sign up to help. You can also
+                    do so via
+                    <a href="https://www.wearefamilydc.org/get-involved/volunteer/">the We Are Family website</a>.
                     Thanks so much!
                   </p>
                 </section>
