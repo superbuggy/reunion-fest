@@ -12,25 +12,27 @@
         --slight-ghosty-white: #fdfdfddd;
         --dark: #13221e;
         --tan: #bb7f48;
-        --yellow: #d5c256;
+        --yellow: #ffcf49;
         --clay: #d1432d;
       }
       a {
         text-decoration: none;
+      }
+      .main-content a {
         color: var(--clay);
       }
-      a:hover {
+      .main-content a:hover {
         text-decoration: underline;
       }
-      a:active {
+      .main-content a:active {
         color: var(--yellow);
       }
-      a:visited {
+      .main-content a:visited {
         color: var(--tan);
       }
       a:hover h3,
       header.sticky a:hover {
-        color: var(--clay);
+        color: var(--yellow);
       }
 
       p {
@@ -205,20 +207,20 @@
       div.schedule-day p.bands span {
         color: var(--clay);
       }
+
       header.sticky {
         margin: 0;
-        padding: 0 0.5rem;
         background-color: var(--clay);
         width: 50%;
-        /* border-bottom: 2px solid var(--clay); */
         position: fixed;
         height: 48px;
       }
       header.sticky nav {
-        width: 100%;
+        margin: 0 0.5rem;
+        margin-bottom: 0.25rem;
+        max-width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 0 0.25rem;
       }
       header.sticky nav a {
         font-family: Rock Salt;
@@ -440,7 +442,7 @@
               <h3>Bacchae</h3>
             </a>
             <nav>
-              <a href="https://bacchae.bandcamp.com/">
+              <a href="https://bacchae.bandcamp.com/" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
             </nav>
@@ -471,7 +473,7 @@
               <h3>Princessed</h3>
             </a>
             <nav>
-              <a href="https://princessed.bandcamp.com/">
+              <a href="https://princessed.bandcamp.com/" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
             </nav>
@@ -496,33 +498,26 @@
               <h3>Jackie and the Treehorns</h3>
             </a>
             <nav>
-              <a class="bandcamp" href="https://jackieandthetreehorns.bandcamp.com/album/go-get-your-ghosts">
-                <!-- <object data="./icons/spotify.svg"></object>  -->
+              <a class="bandcamp" href="https://jackieandthetreehorns.bandcamp.com/album/go-get-your-ghosts" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
-              <a class="spotify" href="https://open.spotify.com/artist/38vWCPOcHo7Y9Vm486Bta3">
-                <!-- <object data="./icons/spotify.svg"></object>  -->
+              <a class="spotify" href="https://open.spotify.com/artist/38vWCPOcHo7Y9Vm486Bta3" target="_blank">
                 <img class="icon" src="./icons/spotify.svg" alt="spotify icon" />
               </a>
 
-              <a class="itunes" href="https://itunes.apple.com/us/artist/jackie-and-the-treehorns/406088957">
-                <!-- <object data="./icons/itunes.svg"></object>  -->
+              <a class="itunes" href="https://itunes.apple.com/us/artist/jackie-and-the-treehorns/406088957" target="_blank">
                 <img class="icon" src="./icons/itunes.svg" alt="itunes icon" />
               </a>
-              <a class="facebook" href="https://www.facebook.com/jackieandthetreehorns">
-                <!-- <object data="./icons/facebook.svg"></object>  -->
+              <a class="facebook" href="https://www.facebook.com/jackieandthetreehorns" target="_blank">
                 <img class="icon" src="./icons/facebook.svg" alt="facebook icon" />
               </a>
-              <a class="instagram" href="https://www.instagram.com/jackientreehorns">
-                <!-- <object data="./icons/instagram.svg"></object>  -->
+              <a class="instagram" href="https://www.instagram.com/jackientreehorns" target="_blank">
                 <img class="icon" src="./icons/instagram.svg" alt="instagram icon" />
               </a>
-              <a class="youtube" href="https://www.youtube.com/user/jackientreehorns">
-                <!-- <object data="./icons/youtube.svg"></object>  -->
+              <a class="youtube" href="https://www.youtube.com/user/jackientreehorns" target="_blank">
                 <img class="icon" src="./icons/youtube.svg" alt="youtube icon" />
               </a>
-              <a class="link" href="http://jackieandthetreehorns.com/">
-                <!-- <object data="./icons/link.svg"></object>  -->
+              <a class="link" href="http://jackieandthetreehorns.com/" target="_blank">
                 <img class="icon" src="./icons/link.svg" alt="link icon" />
               </a>
             </nav>
@@ -558,16 +553,16 @@
               <h3>Breezy Supreme</h3>
             </a>
             <nav>
-              <a href="https://breezysupreme.bandcamp.com">
+              <a href="https://breezysupreme.bandcamp.com" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
-              <a href="https://open.spotify.com/artist/4EYnKpPblwYYfZLTnV0vB1?si=EtECTmWTSnGdFvdslRGSeQ">
+              <a href="https://open.spotify.com/artist/4EYnKpPblwYYfZLTnV0vB1?si=EtECTmWTSnGdFvdslRGSeQ" target="_blank">
                 <img class="icon" src="./icons/spotify.svg" alt="spotify icon" />
               </a>
-              <a href="https://music.apple.com/us/artist/breezy-supreme/1209334841">
+              <a href="https://music.apple.com/us/artist/breezy-supreme/1209334841" target="_blank">
                 <img class="icon" src="./icons/itunes.svg" alt="itunes icon" />
               </a>
-              <a href="https://youtube.com/@Breezyxsupreme">
+              <a href="https://youtube.com/@Breezyxsupreme" target="_blank">
                 <img class="icon" src="./icons/youtube.svg" alt="youtube icon" />
               </a>
             </nav>
@@ -590,7 +585,7 @@
               <h3>Lincoln</h3>
             </a>
             <nav>
-              <a href="https://www.temporaryresidence.com/collections/lincoln">
+              <a href="https://www.temporaryresidence.com/collections/lincoln" target="_blank">
                 <img class="icon" src="./icons/link.svg" alt="link icon" />
               </a>
             </nav>
@@ -614,7 +609,7 @@
               <h3>Samuel S.C.</h3>
             </a>
             <nav>
-              <a href="https://samuelsc.bandcamp.com/">
+              <a href="https://samuelsc.bandcamp.com/" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
             </nav>
@@ -643,7 +638,7 @@
               <h3>Bed Maker</h3>
             </a>
             <nav>
-              <a href="https://bedmakerdc.bandcamp.com/">
+              <a href="https://bedmakerdc.bandcamp.com/" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
             </nav>
@@ -665,7 +660,7 @@
               <h3>Continuals</h3>
             </a>
             <nav>
-              <a href="https://continualsdc.bandcamp.com/">
+              <a href="https://continualsdc.bandcamp.com/" target="_blank">
                 <img class="icon" src="./icons/bandcamp.svg" alt="bandcamp icon" />
               </a>
             </nav>
