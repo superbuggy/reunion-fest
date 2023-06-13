@@ -12,10 +12,21 @@
         --slight-ghosty-white: #fdfdfddd;
         --dark: #13221e;
         --tan: #bb7f48;
+        --yellow: #d5c256;
         --clay: #d1432d;
       }
       a {
         text-decoration: none;
+        color: var(--clay);
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:active {
+        color: var(--yellow);
+      }
+      a:visited {
+        color: var(--tan);
       }
       a:hover h3,
       header.sticky a:hover {
@@ -119,17 +130,20 @@
         font-size: 14px;
       }
 
-      .button {
+      a.button {
+        color: var(--white);
         background-color: var(--clay);
         border-radius: 1rem;
-
-        color: var(--white);
         display: inline-block;
         padding: 1rem;
         margin: 1rem 0;
       }
-      .button:hover {
-        background-color: var(--tan);
+
+      a.button:hover {
+        color: var(--clay);
+        background-color: var(--yellow);
+        text-decoration: none;
+        /* text-shadow: #FFF 1px 1px 1px; */
         border-radius: 1rem;
       }
 
@@ -154,25 +168,42 @@
         border-bottom: 1px solid var(--clay);
         margin: 3rem 1rem;
       }
+      .positive-force {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .positive-force section{
+        padding-left: 1rem;
+
+      }
+      .positive-force section p{
+        margin-top:0;
+
+      }
+
+      div.schedule-event {
+        margin-bottom: 2rem;
+      }
 
       section.why {
         margin-top: 3rem;
         margin-bottom: 5rem;
       }
-      div.schedule-event {
+      div.schedule-day {
         margin-bottom: 4rem;
       }
-      div.schedule-event h3,
-      div.schedule-event h4 {
+      div.schedule-day h3,
+      div.schedule-day h4 {
         margin-bottom: 1rem;
       }
-      div.schedule-event h4 {
+      div.schedule-day h4 {
         margin-top: 1rem;
       }
-      div.schedule-event p.bands {
+      div.schedule-day p.bands {
         /* margin-bottom: 0; */
       }
-      div.schedule-event p.bands span {
+      div.schedule-day p.bands span {
         color: var(--clay);
       }
       header.sticky {
@@ -241,6 +272,14 @@
           font-size: 20px;
           /* color: var(--white); */
         }
+        .positive-force {
+        display: block;
+
+      }
+      .positive-force section{
+        padding-left: 1rem;
+
+      }
       }
     </style>
   </head>
@@ -280,66 +319,109 @@
           </p>
 
           <p>
-            We believe in the potential of DC punk to ignite new art, music and ideas for decades to come; the magic is
-            there when we all come together.
+            We believe in the potential of DC punk to ignite new art, music, community engagement, and ideas for decades
+            to come; the magic is there when we all come together.
           </p>
 
           <p>
             In true all ages fashion, this gathering will have something for everyone - including the youngest and
             newest to punk. Families and children welcome!
           </p>
-        </section>
+          <h4>In Collaboration with Positive Force DC</h4>
+          <div class="positive-force">
+            
+            <img src="./images/pf-logo.png" style="max-height: 70vh;" alt="Logo for Positive Force DC" />
+            <section>
+              <p>
+                Since 1985, Positive Force DC has been turning punk idealism into community action through benefit concerts,
+                protests, educational events, film showings and service work. For more information about PF, or to get more
+                involved, please <a href="mailto:dcpositiveforce@gmail.com">email PF</a> or <a href="tel:+12024878698">call 202-487-8698</a>. PF shares office space with We Are
+                Family at <a href="https://www.saintstephensdc.org/">St. Stephen's</a>, <a href="https://www.google.com/maps/dir/39.9287327,-75.1599078/1525+Newton+St+NW,+Washington,+DC+20010/@39.4217898,-77.2147361,8z">1525 Newton Street NW, WDC 20010</a> and is always open to new ideas and energy. Be
+                more than a witness!
+              </p>
+              <p>
+                Help fight hunger among our older neighbors while also building bridges across lines of race, class, age and
+                beyond! Join We Are Family to bring groceries and love to low-income seniors in the Columbia Heights
+                neighborhood.
+              </p>
+            </section>
+
+          </div>
         <div class="divider" id="schedule"></div>
         <section class="schedule">
           <h2>Schedule</h2>
-          <div class="schedule-event">
+          <div class="schedule-day">
             <h3>Friday, July 28th</h3>
-            <h4>St. Stephens (6pm - 10pm)</h4>
-            <p class="bands">
-              Bacchae <span>-</span> Princessed <span>-</span> Jackie and the Treehorns <span>-</span> Breezy Supreme
-            </p>
-            <a
-              href="https://www.eventbrite.com/e/rs-night-1-bacchae-princessed-jackie-and-the-treehorns-breezy-supreme-tickets-645440609237"
-              class="button"
-            >
-              Get Tickets for July 28th
-            </a>
-          </div>
-          <div class="schedule-event">
-            <h3>Saturday, July 29th</h3>
-            <h4>Picnic @ Ft. Reno (12pm - 3pm)</h4>
-            <p>
-              Free and open to all! Bring sunscreen, pop up tent or umbrella, food and drink and yourselves! In the
-              event of rain this picnic will move indoors at St. Stephen's
-            </p>
-            <h4>St. Stephens (6pm - 10pm)</h4>
-            <p class="bands">Lincoln <span>-</span> Samuel S.C. <span>-</span> Bed Maker <span>-</span> Continuals</p>
-            <a
-              href="https://www.eventbrite.com/e/renuion-summer-night-2-lincoln-samuel-sc-bed-maker-and-continuals-tickets-647410310667"
-              class="button"
-              >Get Tickets for July 29th</a
-            >
-          </div>
-          <div class="schedule-event">
-            <h3>Sunday, July 30th</h3>
-            <h4>DC Punk Archive @ MLK Library (1pm - 5pm)</h4>
-            <p>
-              The DC Punk Archive was established in 2014 to document the vibrant and influential punk music scene of
-              Washington D.C. The subject scope is intentionally broad, including punk and related local music between
-              1976-present, in order to capture both well-documented and lesser-known stories. The archive documents
-              music and musicians as well as the cultural context of venues, festivals, record shops, radio stations,
-              houses and tours that were a vital part of the D.C. scene.
-            </p>
-
-            <p>
-              The collection includes photographs, published materials (books, zines, and articles), sound and video
-              recordings (vinyl records, tapes, CDs, live performances, demos, oral histories, and interviews), and
-              ephemera (fliers, posters, set lists, letters, and tickets).
-            </p>
-            <div>
-              <a href="https://www.dclibrary.org/plan-visit/martin-luther-king-jr-memorial-library" class="button"
-                >Visit the DC Punk Archive</a
+            <div class="schedule-event">
+              <h4>St. Stephens (6pm - 10pm)</h4>
+              <p class="bands">
+                Bacchae <span>-</span> Princessed <span>-</span> Jackie and the Treehorns <span>-</span> Breezy Supreme
+              </p>
+              <a
+                href="https://www.eventbrite.com/e/rs-night-1-bacchae-princessed-jackie-and-the-treehorns-breezy-supreme-tickets-645440609237"
+                class="button"
               >
+                Get Tickets for July 28th
+              </a>
+            </div>
+          </div>
+          <div class="schedule-day">
+            <h3>Saturday, July 29th</h3>
+            <div class="schedule-event">
+              <h4>Grocery Delivery for Low-Income Seniors (10am - 1pm)</h4>
+              <div class="positive-force">
+                <img src="./images/we-are-family.png" alt="We Are Family DC logo">
+                <section>
+                  <p>
+                    Join We Are Family to bring groceries and love to low-income seniors in the Columbia Heights
+                    neighborhood from 10am-1pm on Saturday, July 29th! Both folks with cars and those without can help fight
+                    hunger among our older neighbors while also building bridges across lines of race, class, age and
+                    beyond. Contact Mark Andersen <a href="mailto:wearefamilydc@gmail.com">via email</a> or
+                    <a href="tel:+12024878698">202-487-8698</a> to get more details or to sign up to help. You can also do
+                    so via <a href="https://www.wearefamilydc.org/get-involved/volunteer/">the We Are Family website</a>.
+                    Thanks so much!
+                  </p>
+                </section>
+              </div>
+            </div>
+            <div class="schedule-event">
+              <h4>Picnic @ Ft. Reno (12pm - 3pm)</h4>
+              <p>
+                Free and open to all! Bring sunscreen, pop up tent or umbrella, food and drink and yourselves! In the
+                event of rain this picnic will move indoors at St. Stephen's
+              </p>
+            </div>
+            <div class="schedule-event">
+              <h4>St. Stephens (6pm - 10pm)</h4>
+              <p class="bands">Lincoln <span>-</span> Samuel S.C. <span>-</span> Bed Maker <span>-</span> Continuals</p>
+              <a
+                href="https://www.eventbrite.com/e/renuion-summer-night-2-lincoln-samuel-sc-bed-maker-and-continuals-tickets-647410310667"
+                class="button"
+                >Get Tickets for July 29th</a
+              >
+            </div>
+          </div>
+          <div class="schedule-day">
+            <h3>Sunday, July 30th</h3>
+            <div class="schedule-event">
+              <h4>DC Punk Archive @ MLK Library (1pm - 5pm)</h4>
+              <p>
+                The DC Punk Archive was established in 2014 to document the vibrant and influential punk music scene of
+                Washington D.C. The subject scope is intentionally broad, including punk and related local music between
+                1976-present, in order to capture both well-documented and lesser-known stories. The archive documents
+                music and musicians as well as the cultural context of venues, festivals, record shops, radio stations,
+                houses and tours that were a vital part of the D.C. scene.
+              </p>
+              <p>
+                The collection includes photographs, published materials (books, zines, and articles), sound and video
+                recordings (vinyl records, tapes, CDs, live performances, demos, oral histories, and interviews), and
+                ephemera (fliers, posters, set lists, letters, and tickets).
+              </p>
+              <div>
+                <a href="https://www.dclibrary.org/plan-visit/martin-luther-king-jr-memorial-library" class="button"
+                  >Visit the DC Punk Archive</a
+                >
+              </div>
             </div>
           </div>
         </section>
@@ -611,6 +693,11 @@
           </p>
 
           <p>Keep checking this space for more details, photos, etc! See you this summer.</p>
+          <p>
+            Accessibility concerns? We are here to help. Email
+            <a href="mailto:katy@exoticfever.com">katy@exoticfever.com</a> and
+            <a href="mailto:amanda@dischord.com">amanda@dischord.com</a>.
+          </p>
         </section>
       </div>
     </main>
